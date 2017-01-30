@@ -22,11 +22,11 @@ namespace ConsoleApplication4
         }
         static void Main(string[] args)
         {
-            int intial = 100, number;
-            Program calc = new Program();
+            int finalNumber = 100, sum;
+            Program execute = new Program();
 
-            number = calc.fibonacci(intial);
-            Console.WriteLine(Convert.ToString(number));
+            sum = execute.fibonacci(finalNumber);
+            Console.WriteLine(Convert.ToString(sum));
             Console.ReadKey();
         }
     }
