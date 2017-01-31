@@ -9,24 +9,27 @@ namespace ConsoleApplication4
     class Program
     {
 
-        int fibonacci(int number)
+        int fibonacci(int input)
         {
-            int sum;
-            if (number <= 1)
+            int fibonacciterm;
+            if (input==0)
+            {
+                return 0;
+            }
+            if (input == 1)
             {
                 return 1;
             }
             else
-                sum = (fibonacci(number - 1) + fibonacci(number - 2));
-            return sum;
+                fibonacciterm = (fibonacci(input - 1) + fibonacci(input - 2));
+            return fibonacciterm;
         }
         static void Main(string[] args)
         {
-            int finalNumber = 100, sum;
+            int userinput = 10, fibonaciterm;
             Program execute = new Program();
-
-            sum = execute.fibonacci(finalNumber);
-            Console.WriteLine(Convert.ToString(sum));
+            fibonaciterm = execute.fibonacci(userinput);
+            Console.WriteLine(Convert.ToString(fibonaciterm));
             Console.ReadKey();
         }
     }

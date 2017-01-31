@@ -1,2 +1,7 @@
 C:\Users\Neeharika.Pathuri\Documents\HelloWorld\fibo\fibo\bin\Debug\fibo.exe.config
 C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\bin\Debug\fibo.exe.config
+C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\bin\Debug\fibo.exe
+C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\bin\Debug\fibo.pdb
+C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\obj\Debug\fibo.csprojResolveAssemblyReference.cache
+C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\obj\Debug\fibo.exe
+C:\Users\Neeharika.Pathuri\Documents\Fibonacci-Series\fibo\obj\Debug\fibo.pdb
