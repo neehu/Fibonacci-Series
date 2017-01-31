@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication4
+namespace fibonaciSeries
 {
     class Program
     {
 
         int fibonacci(int input)
         {
-            int fibonacciterm;
+            int lastterm;
             if (input==0)
             {
                 return 0;
@@ -21,15 +21,15 @@ namespace ConsoleApplication4
                 return 1;
             }
             else
-                fibonacciterm = (fibonacci(input - 1) + fibonacci(input - 2));
-            return fibonacciterm;
+                lastterm = (fibonacci(input - 1) + fibonacci(input - 2));
+            return lastterm;
         }
         static void Main(string[] args)
         {
-            int userinput = 10, fibonaciterm;
+            int userinput = 10, lastterm;
             Program execute = new Program();
-            fibonaciterm = execute.fibonacci(userinput);
-            Console.WriteLine(Convert.ToString(fibonaciterm));
+            lastterm = execute.fibonacci(userinput);
+            Console.WriteLine(Convert.ToString(lastterm));
             Console.ReadKey();
         }
     }
