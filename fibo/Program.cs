@@ -6,30 +6,30 @@ using System.Threading.Tasks;
 
 namespace fibonaciSeries
 {
-class FibonacciSeries
-{
-    int fibonacci(int input)
+    class Fibonacci
     {
-        int calculatedLastterm;
-        if (input==0)
+        int fibonacci(int input)
         {
-            return 0;
+            int Lastterm;
+            if (input == 0)
+            {
+                return 0;
+            }
+            if (input == 1)
+            {
+                return 1;
+            }
+            else
+                Lastterm = (fibonacci(input - 1) + fibonacci(input - 2));
+            return Lastterm;
         }
-        if (input == 1)
+        static void Main(string[] args)
         {
-            return 1;
+            int userinput = 10, Lastterm;
+            Fibonacci execute = new Fibonacci();
+            Lastterm = execute.fibonacci(userinput);
+            Console.WriteLine(Convert.ToString(Lastterm));
+            Console.ReadKey();
         }
-        else
-            calculatedLastterm = (fibonacci(input - 1) + fibonacci(input - 2));
-        return calculatedLastterm;
-       }
-       static void Main(string[] args)
-       {
-        int userinput = 10, calculatedLastterm;
-        FibonacciSeries execute = new FibonacciSeries();
-        calculatedLastterm = execute.fibonacci(userinput);
-        Console.WriteLine(Convert.ToString(calculatedLastterm));
-        Console.ReadKey();
-       }
     }
 }
